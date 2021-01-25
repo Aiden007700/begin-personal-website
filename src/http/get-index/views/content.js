@@ -69,7 +69,6 @@ export default function Content(props = {}) {
           display-flex
           flex-wrap-wrap
           align-items-center
-          justify-content-space-between
           margin-bottom-16
         "
       >
@@ -112,48 +111,16 @@ export default function Content(props = {}) {
           color-979797
         "
       >
-        Built with
+        Built by
       </span>
       <a
-        class="
-          fill-979797
-          fill-hover-FD6D6D
-          transition-fill
-        "
-        href="https://begin.com"
+        href="aidenec.com"
         target="_blank"
         rel="noopener"
       >
-        ${Icon({
-          class: 'fill-inherit',
-          href: 'begin',
-          style: 'width:4rem;height:1.2725rem;'
-        })}
+        Aiden
       </a>
     </span>
-    <a
-      class="
-        display-block
-        padding-top-8
-        padding-right-16
-        padding-bottom-8
-        padding-left-16
-        font-size-12
-        font-weight-300
-        text-decoration-none
-        color-FFFFFF
-        border-radius-pill
-        background-color-979797
-        background-color-hover-058AEA
-        transition-background-color
-        text-transform-uppercase
-      "
-      href="https://begin.com"
-      rel="noopener"
-      target="_blank"
-    >
-      Build yours
-    </a>
   </div>
 </section>
   `
