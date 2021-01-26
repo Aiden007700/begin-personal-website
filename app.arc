@@ -1,8 +1,12 @@
 @app
 begin-app
 
+@static
+folder build
+spa true
+
 @http
-get /
+get /api
 
 @tables
 data
