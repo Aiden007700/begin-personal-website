@@ -4,24 +4,27 @@
   "description": "Basic Begin personal website",
   "proxy": "http://localhost:3333",
   "dependencies": {
+    "@architect/sandbox": "^3.1.3",
+    "@begin/data": "^1.2.3",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "3.4.4",
-    "@architect/sandbox": "^3.1.3",
-    "@begin/data": "^1.2.3",
     "tap-spec": "^5.0.0",
     "tape": "^5.1.1",
-    "tiny-json-http": "^7.2.2"
+    "tiny-json-http": "^7.2.2",
+    "typescript": "^4.1.3"
   },
   "scripts": {
-    "start": "run-p start:react api",
-    "start:react": "react-scripts start",
-    "build": "react-scripts build",
-    "test:i": "react-scripts test",
+    "start": "tsc && run-p start:react api",
+    "start:react": "tsc && react-scripts start",
+    "build": "tsc && react-scripts build",
+    "test:i": "tsc && react-scripts test",
     "eject": "react-scripts eject",
     "api": "cross-env NODE_ENV=testing ARC_LOCAL=1 npx sandbox",
-    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/**/*-test.js test/*-test.js | tap-spec",
-    "serve": "run-s build api"
+    "test": "tsc && cross-env NODE_ENV=testing PORT=6666 tape test/**/*-test.js test/*-test.js | tap-spec",
+    "serve": "tsc && run-s build api"
   },
   "eslintConfig": {
     "extends": "react-app"
