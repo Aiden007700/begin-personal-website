@@ -1,6 +1,8 @@
+import * as data from "https://deno.begin.com/data@latest/mod.ts";
 import Main from './views/main.js'
 
 export async function handler (/*req: object*/) {
+  await data.incr({table: 'meta', key: 'totalRequests'})
   return {
     statusCode: 200,
     headers: {
