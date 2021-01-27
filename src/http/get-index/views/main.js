@@ -1,7 +1,7 @@
 import Styles  from './styles.js'
 import Symbols from './symbols.js'
 import Splash  from './splash.js'
-import Content from './content.js'
+import Content from './content.jsx'
 
 export default function Main(props = {}) {
   let title = props.title || 'Personal Website'

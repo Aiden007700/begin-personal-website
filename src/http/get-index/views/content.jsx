@@ -72,9 +72,11 @@ export default function Content(props = {}) {
           margin-bottom-16
         "
       >
-        ${MailLink({
-          email
-        })}
+        ${ ''
+      // MailLink({
+      //     email
+      //   })
+  }
         ${SocialMedia({
           twitter,
           linkedin,
@@ -84,44 +86,44 @@ export default function Content(props = {}) {
       </div>
     </div>
   </div>
-  <div
-    class="
-      display-flex
-      align-items-center
-      justify-content-space-between
-      padding-top-16
-      padding-right-32
-      padding-left-32
-      padding-right-48-large
-      padding-bottom-16
-      padding-left-48-large
-      color-5A5C5B
-      background-color-F2F0F3
-    "
-  >
-    <span
-      class="
-        display-flex
-        align-item-center
-      "
-    >
-      <span
-        class="
-          margin-right-8
-          color-979797
-        "
-      >
-        Built by
-      </span>
-      <a
-        href="aidenec.com"
-        target="_blank"
-        rel="noopener"
-      >
-        Aiden
-      </a>
-    </span>
-  </div>
+<!--  <div-->
+<!--    class="-->
+<!--      display-flex-->
+<!--      align-items-center-->
+<!--      justify-content-space-between-->
+<!--      padding-top-16-->
+<!--      padding-right-32-->
+<!--      padding-left-32-->
+<!--      padding-right-48-large-->
+<!--      padding-bottom-16-->
+<!--      padding-left-48-large-->
+<!--      color-5A5C5B-->
+<!--      background-color-F2F0F3-->
+<!--    "-->
+<!--  >-->
+<!--    <span-->
+<!--      class="-->
+<!--        display-flex-->
+<!--        align-item-center-->
+<!--      "-->
+<!--    >-->
+<!--      <span-->
+<!--        class="-->
+<!--          margin-right-8-->
+<!--          color-979797-->
+<!--        "-->
+<!--      >-->
+<!--        Built by-->
+<!--      </span>-->
+<!--      <a-->
+<!--        href="aidenec.com"-->
+<!--        target="_blank"-->
+<!--        rel="noopener"-->
+<!--      >-->
+<!--        Aiden-->
+<!--      </a>-->
+<!--    </span>-->
+<!--  </div>-->
 </section>
   `
 }

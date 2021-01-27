@@ -21,7 +21,7 @@ export async function handler (/*req: object*/) {
        * Contact / social
        * - Comment out any item below to remove it from your page
        */
-      email: 'campbell.e.aiden@gmail.com',
+      email: '',
       twitter: '',
       linkedin: 'aidenec',
       instagram: '',
